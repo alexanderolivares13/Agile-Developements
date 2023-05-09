@@ -1,18 +1,18 @@
 :root {
-    --slate-text: #2f4f4f;
+    --slate-text: #022d3d;
 }
 
 body {
-    background-color: #f6efef;
+    background-color: #a9a9a9;
 }
 
 .navbar {
-    background-color: wheat;
+    background-color: rgb(162, 145, 236);
 }
 
 .navbar h1 {
     display: inline-block;
-    color: #4f4949; 
+    color: white; 
     font-size: 2.0rem;   
     margin-left: 15px;
 }
@@ -29,37 +29,43 @@ ul {
     list-style-type: none;
     display: inline-block;
     font-size: 1.3rem;
+    position: relative;
+    top: 10px;
 }
-a {
+
+.links {
     text-decoration: none;
-    color: var(--slate-text);
+    color: white;
 }
 
 aside, main, footer {
     margin-left: 15px;
 }
+.banner {
+    width: 100%;
+}
 .sidebar-left {
-    flex-wrap: wrap;
     display: flex;   
-    flex: 0 0 200px;
+    margin-left: 10%;
 }
 
 #about {
     height: 300px;
 }
 
-.sidebar-left h2 {
+.sidebar-left h2, .sidebar-left div h2  {
     border-right: solid;
+    border-style: ;
     border-color: var(--slate-text);
-    float: left;
     width: 200px;
 }
 
-.sidebar-left img {
+.sidebar-left div img {
     position: relative;
     top: 23px;
     margin-left: 1%;
-    height: 255px;
+    height: max-content;
+    width: max-content;
     border-radius: 20px;
 }
 .sidebar-left div p {
@@ -69,14 +75,43 @@ aside, main, footer {
     clear: both;
     font-size: 1.2rem;
     color: var(--slate-text);
-    flex: 0 0 80%;
+    max-width: 60%;
 }
 .sidebar-left div {
     display: flex;
 }
 
-
+#main-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 957px;
+    height: 639px;
+    margin-top: 3%;
+    margin-left: 33%;
+    border: solid var(--slate-text);
+    border-radius: 20px;
+    background-image: url("./images/chess-king-queen.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.label{
+    color: white;
+    font-size: 2em;
+    width: max-content;
+    height: max-content;
+    background-color: var(--slate-text);
+    padding: 5px 10px;
+}
 h2 {
     font-size: 3rem;
     color: var(--slate-text);
+}
+
+@media screen and (max-width: 992px) {
+        /* .content, .sidebar-left div {
+            display: flex;
+            flex-direction: column;
+        } */
 }
