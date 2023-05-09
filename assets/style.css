@@ -6,7 +6,7 @@ body {
     background-color: #f6efef;
 }
 
-.navbar{
+.navbar {
     background-color: wheat;
 }
 
@@ -16,7 +16,7 @@ body {
     font-size: 2.0rem;   
     margin-left: 15px;
 }
-.ln{
+.ln {
     color: var(--slate-text);
 }
 
@@ -38,27 +38,43 @@ a {
 aside, main, footer {
     margin-left: 15px;
 }
-.sidebar-left{
+.sidebar-left {
     flex-wrap: wrap;
-    display: inline-flex;
+    display: flex;   
+    flex: 0 0 200px;
 }
 
-.sidebar-left h2{
+#about {
+    height: 300px;
+}
+
+.sidebar-left h2 {
     border-right: solid;
     border-color: var(--slate-text);
     float: left;
     width: 200px;
-    
 }
 
-.sidebar-left p {
+.sidebar-left img {
+    position: relative;
+    top: 23px;
+    margin-left: 1%;
+    height: 255px;
+    border-radius: 20px;
+}
+.sidebar-left div p {
     position: relative;
     top: 22px;
-    left: 10%;
+    left: 5px;
     clear: both;
     font-size: 1.2rem;
-    color: var(--slate-text)
+    color: var(--slate-text);
+    flex: 0 0 80%;
 }
+.sidebar-left div {
+    display: flex;
+}
+
 
 h2 {
     font-size: 3rem;
