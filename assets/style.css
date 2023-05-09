@@ -1,5 +1,7 @@
 :root {
     --slate-text: #022d3d;
+    --lilac: #a291ec;
+    --white: #fff;
 }
 
 body {
@@ -7,12 +9,12 @@ body {
 }
 
 .navbar {
-    background-color: rgb(162, 145, 236);
+    background-color: var(--lilac);
 }
 
 .navbar h1 {
     display: inline-block;
-    color: white; 
+    color: var(--white); 
     font-size: 2.0rem;   
     margin-left: 15px;
 }
@@ -25,42 +27,33 @@ body {
     margin-right: 15px;
 }
 
-ul {
-    list-style-type: none;
+.navbar div ul {
     display: inline-block;
+    list-style-type: none;
     font-size: 1.3rem;
     position: relative;
     top: 10px;
 }
 
 .links {
+    background-color: var(--slate-text);
+    padding: 10px;
+    border-radius: 10px;
     text-decoration: none;
-    color: white;
+    color: var(--white);
 }
 
-aside, main, footer {
-    margin-left: 15px;
-}
 .banner {
     width: 100%;
 }
-.sidebar-left {
+#about{
     display: flex;   
     margin-left: 10%;
-}
-
-#about {
+    justify-content: center;
     height: 300px;
 }
 
-.sidebar-left h2, .sidebar-left div h2  {
-    border-right: solid;
-    border-style: ;
-    border-color: var(--slate-text);
-    width: 200px;
-}
-
-.sidebar-left div img {
+.about-me img {
     position: relative;
     top: 23px;
     margin-left: 1%;
@@ -68,50 +61,116 @@ aside, main, footer {
     width: max-content;
     border-radius: 20px;
 }
-.sidebar-left div p {
+.about-me p {
     position: relative;
     top: 22px;
-    left: 5px;
-    clear: both;
+    left: 35px;
     font-size: 1.2rem;
     color: var(--slate-text);
-    max-width: 60%;
-}
-.sidebar-left div {
-    display: flex;
+    margin-right: 5%;
 }
 
-#main-card {
+#work-title, #about-me-title, #contact-me-title {
+    text-align: center;
+    border-bottom: dotted;
+}
+.current-work{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 0 5%;
+}
+
+.label {
+    color: var(--white);
+    font-size: 1.2em;
+    padding: 5px 10px;
+    border-radius: 8px;
+    width: max-content;
+    height: max-content;
+    background-color: var(--slate-text);
+}
+.label #chess, #chess-2 {
+    font-size: 3rem;
+}
+
+.cards {    
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    width: 957px;
-    height: 639px;
-    margin-top: 3%;
-    margin-left: 33%;
+    width: 400px;
+    height: 400px;
     border: solid var(--slate-text);
     border-radius: 20px;
-    background-image: url("./images/chess-king-queen.png");
-    background-repeat: no-repeat;
+    margin-top: 1%;
     background-size: cover;
+    background-repeat: no-repeat;
 }
-.label{
-    color: white;
-    font-size: 2em;
-    width: max-content;
-    height: max-content;
-    background-color: var(--slate-text);
-    padding: 5px 10px;
+#card-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 1600px;
+    height: 800px;
+    border: solid var(--slate-text);
+    border-width: 5px;
+    border-radius: 20px;
+    background-image: url(./images/chess-board.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#chess {
+    color: var(--white);
+    text-decoration: none;
 }
 h2 {
     font-size: 3rem;
     color: var(--slate-text);
 }
+#contact-me-title {
+    margin-bottom: 0px;
+}
+footer {
+    background-color: var(--lilac);
+    padding-top: 80px;
+}
+footer ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+footer ul li {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    list-style-type: none;
+    bottom: 60px;
+    font-size: 1.3rem;
+    margin: 0 20px;
+}
+ 
+#card-1:hover {
+    box-shadow: inset 0px 0px 24px var(--lilac);
+}
+.cards:hover {
+    box-shadow: inset 0px 0px 18px var(--lilac);
+}
 
 @media screen and (max-width: 992px) {
-        /* .content, .sidebar-left div {
-            display: flex;
-            flex-direction: column;
-        } */
+    footer ul li, .cards {
+        display: flex;
+        flex-direction: column;
+        flex: 0 0 50%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    footer ul li, .cards {
+        display: flex;
+        flex-direction: column;
+        flex: 0 0 60%;
+    }
+
 }
