@@ -39,6 +39,13 @@ body {
     background-color: var(--slate-text);
     padding: 10px;
     border-radius: 10px;
+}
+
+.links:hover {
+    box-shadow: inset 0 0 8px var(--white);
+}
+
+a {
     text-decoration: none;
     color: var(--white);
 }
@@ -81,18 +88,6 @@ body {
     margin: 0 5%;
 }
 
-.label {
-    color: var(--white);
-    font-size: 1.2em;
-    padding: 5px 10px;
-    border-radius: 8px;
-    width: max-content;
-    height: max-content;
-    background-color: var(--slate-text);
-}
-.label #chess, #chess-2 {
-    font-size: 3rem;
-}
 
 .cards {    
     display: flex;
@@ -107,6 +102,26 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
 }
+
+.cards:hover {
+    box-shadow: inset 0px 0px 18px var(--lilac);
+}
+.label {
+    color: var(--white);
+    font-size: 1.4em;
+    padding: 5px 10px;
+    border-radius: 8px;
+    width: max-content;
+    height: max-content;
+    background-color: var(--slate-text);
+}
+.label #chess, #chess-2 {
+    font-size: 3rem;
+}
+.label:hover{
+    box-shadow: inset 0px 0px 8px var(--lilac);
+}
+
 #card-1 {
     display: flex;
     flex-direction: column;
@@ -121,10 +136,34 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
 }
+
+#card-1:hover {
+    box-shadow: inset 0px 0px 24px var(--lilac);
+}
+
+#card-1-label:hover {
+    box-shadow: inset 0px 0px 8px var(--lilac) ;
+}
 #chess {
     color: var(--white);
     text-decoration: none;
 }
+#card-2{
+    background-image: url(./images/gym-weight.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#card-3{
+    background-image: url(./images/boxer.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#card-4{
+    background-image: url(./images/stonks.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    }
+
 h2 {
     font-size: 3rem;
     color: var(--slate-text);
@@ -151,13 +190,6 @@ footer ul li {
     margin: 0 20px;
 }
  
-#card-1:hover {
-    box-shadow: inset 0px 0px 24px var(--lilac);
-}
-.cards:hover {
-    box-shadow: inset 0px 0px 18px var(--lilac);
-}
-
 @media screen and (max-width: 992px) {
     footer ul li, .cards {
         display: flex;
