@@ -9,9 +9,12 @@
     <link rel="stylesheet" href="./assets/style.css">
 </head>
 <body>
+    <!-- Idea from the navbar was from the challenge 1 website as reference, using the ul/li together to create the separate links -->
     <nav class="navbar" id="top">
+        <!-- Put my last name in a span with a class to be able to have alternating colors for the first and last name -->
             <h1 id="alex">Alexander <span class="ln">Olivares</span></h1>
             <div>
+                <!-- href to the ids to be able to take the user to that part of the webpage -->
             <ul>
                 <li>
                     <a href="#about" class="links">About Me</a>
@@ -32,11 +35,12 @@
                     <a href="#contact-me-title" class="links">Contact Me</a></li></ul>
             </div>
     </nav>
+    <!-- Inserted an img as a banner outside of the main content to be able to keep it at 100% width at all times and screen lengths -->
     <img class="banner" src="./assets/images/dev-banner2.jpg" alt="blue banner with workflow design">
     <main class="content">
+        <!-- h2 is outside of the main section so it's not affected by flexbox properties -->
         <h2 id="about-me-title">About Me</h2>
         <section class="about-me" id="about">
-               
                     <img src="./assets/images/aialex_Fotor.png" alt="oil painting of Alex">
                     <p>
                         Greetings! Welcome to my portfolio!<br>
@@ -47,6 +51,8 @@
                
         </section>
         <h2 id="work-title">Current Work</h2>
+        <!-- Work section is <span> elements inside <div> to be able to have better control for styling for each "label" -->
+        <!-- Different ids for every card since images were inserted as background images instead of being nested within the anchor, this helped resolve any issues when resizing and box borders -->
         <section class="current-work" id="work">
             <div id="card-1">
                     <span class="label" id="card-1-label">
@@ -79,10 +85,10 @@
 
                 </span>
             </div>
-            
         </section>
     </main>
     <h2 id="contact-me-title">Contact Me</h2>
+    <!-- Idea from the navbar was from the challenge 1 website as reference, using the ul/li together to create the separate links, this same idea was applied to make the footer -->
     <footer>
         <ul>
             <li>
