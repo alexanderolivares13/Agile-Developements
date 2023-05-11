@@ -34,6 +34,7 @@ N/A
 - The buttons on the footer are fully functional, click on the phone number to immediately open your dialer, click on the email address to send an email, and go to the respective websites and sections.
 
 ## Credits
+- Lines of code 15-41 (HTML) Lines 15-39 (CSS) code is similar in structure and use as the code from Challenge 01 for the nav bar strucute. By using ul/li to place the anchors into and float to the right side of the page. 
 
 - Thank you to the following websites for the stock images used for my profile. All credits go to the respective sites for the images.
 
