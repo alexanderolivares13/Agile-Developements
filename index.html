@@ -1,20 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Developements by Alexander</title>
-    <link rel="stylesheet" href="./assets/reset.css"> 
+    <link rel="stylesheet" href="./assets/reset.css">
     <link rel="stylesheet" href="./assets/style.css">
 </head>
+
 <body>
     <!-- Idea from the navbar was from the challenge 1 website as reference, using the ul/li together to create the separate links -->
     <nav class="navbar" id="top">
         <!-- Put my last name in a span with a class to be able to have alternating colors for the first and last name -->
-            <h1 id="alex">Alexander <span class="ln">Olivares</span></h1>
-            <div>
-                <!-- href to the ids to be able to take the user to that section of the webpage -->
+        <h1>Alexander <span class="ln">Olivares</span></h1>
+        <div>
+            <!-- href to the ids to be able to take the user to that section of the webpage -->
             <ul>
                 <li>
                     <a href="#about" class="links">About Me</a>
@@ -32,8 +34,10 @@
             </ul>
             <ul>
                 <li>
-                    <a href="#contact-me-title" class="links">Contact Me</a></li></ul>
-            </div>
+                    <a href="#contact-me-title" class="links">Contact Me</a>
+                </li>
+            </ul>
+        </div>
     </nav>
     <!-- Inserted an img as a banner outside of the main content to be able to keep it at 100% width at all times and screen lengths -->
     <img class="banner" src="./assets/images/dev-banner2.jpg" alt="blue banner with workflow design">
@@ -41,49 +45,51 @@
         <!-- h2 is outside of the main section so it's not affected by flexbox properties -->
         <h2 id="about-me-title">About Me</h2>
         <section class="about-me" id="about">
-                    <img src="./assets/images/aialex_Fotor.png" alt="oil painting of Alex">
-                    <p>
-                        Greetings! Welcome to my portfolio!<br>
-                        My name is Alexander Olivares, for the majority of my professional career I have worked in the Supply Chain & Logistic areas.<br> 
-                        For the past decade I have had an interest in web design, programming and software developement. <br>
-                        However, recently I have decided to pursue my passion.<br>My goal is to learn enough about programming to be able to build a functioning chess engine and analysis board.<br> Click any of the labels on the boxes below to view my all of my recent completed projects.
-                    </p>
-               
+            <img src="./assets/images/aialex_Fotor.png" alt="oil painting of Alex">
+            <p>
+                Greetings! Welcome to my portfolio!<br>
+                My name is Alexander Olivares, for the majority of my professional career I have worked in the Supply
+                Chain & Logistic areas.<br>
+                For the past decade I have had an interest in web design, programming and software developement. <br>
+                However, recently I have decided to pursue my passion.<br>My goal is to learn enough about programming
+                to be able to build a functioning chess engine and analysis board.<br> Click any of the images on the
+                boxes below to view my all of my recent projects.
+            </p>
         </section>
         <h2 id="work-title">Current Work</h2>
         <!-- Work section is <span> elements inside <div> to be able to have better control for styling for each "label" -->
-        <!-- Different ids for every card since images were inserted as background images instead of being nested within the anchor, this helped resolve any issues when resizing and box borders -->
-        <section class="current-work" id="work">
-            <div id="card-1">
-                    <span class="label" id="card-1-label">
-                        <a id="chess" href="http://google.com">Chess Engine
-                        </a>
-                    </span>
-                    <span class="label" id="chess-2">In Progress</span>
+        <!-- Different ids for every card since images were inserted as background images, this helped resolve any issues when resizing and box borders -->
+        <section id="work">
+            <div id="card-1-container">
+                <a href="https://www.google.com">
+                    <div id="card-1">
+                        <p class="label" id="chess" href="http://google.com">Chess Engine
+                        </p>
+                        <p class="label" id="chess-2">In Progress</p>
+                    </div>
+                </a>
             </div>
-            <div class="cards" id="card-2">
-                <span class="label">
-                    <a href="http://google.com">Workout Tracker</a>
-                </span>
-                <span class="label">In Progress
-
-                </span>
-            </div>
-            <div class="cards" id="card-3">
-                <span class="label">
-                    <a href="http://google.com">Boxing Timer</a>
-                </span>
-                <span class="label">In Progress
-
-                </span>
-            </div>
-            <div class="cards" id="card-4">
-                <span class="label">
-                    <a href="http://google.com">Stock Ticker Analysis</a>
-                </span>
-                <span class="label">In Progress
-
-                </span>
+            <div class="current-work">
+                <a href="http://www.google.com">
+                    <div class="cards" id="card-2">
+                        <p class="label">Workout Tracker</p>
+                        <p class="label">In Progress
+                        </p>
+                    </div>
+                </a>
+                <a href="http://www.google.com">
+                    <div class="cards" id="card-3">
+                        <p class="label">Boxing Timer</p>
+                        <p class="label">In Progress
+                        </p>
+                    </div>
+                </a>
+                <a href="http://www.google.com">
+                    <div class="cards" id="card-4">
+                        <p class="label">Stock Ticker Analysis</p>
+                        <p class="label">In Progress</p>
+                    </div>
+                </a>
             </div>
         </section>
     </main>
@@ -95,13 +101,13 @@
                 <a class="links" href="tel:1-909-555-1234">Phone: (909)-555-1234</a>
             </li>
             <li>
-                <a class="links" href="mailto:alexander.            olivares1310@gmail.com">alexander.olivares1310@gmail.com</a>
+                <a class="links" href="mailto:alexander.olivares1310@gmail.com">alexander.olivares1310@gmail.com</a>
             </li>
             <li>
                 <a class="links" href="http://www.github.com/alexanderolivares13">Github</a>
             </li>
             <li>
-                <a class="links" href=https://twitter.com/KingSaschaa>Twitter</a>
+                <a class="links" href=https://www.twitter.com>Twitter</a>
             </li>
             <li>
                 <a class="links" href=#top>Back To Top</a>
@@ -109,4 +115,5 @@
         </ul>
     </footer>
 </body>
+
 </html>

@@ -14,8 +14,8 @@ body {
 
 .navbar h1 {
     display: inline-block;
-    color: var(--white); 
-    font-size: 2.0rem;   
+    color: var(--white);
+    font-size: 2.0rem;
     margin-left: 15px;
 }
 
@@ -28,6 +28,7 @@ body {
     float: right;
     margin-right: 15px;
 }
+
 /* used similar code to make the navbar similar to the challenge 01 website  */
 .navbar div ul {
     display: inline-block;
@@ -59,14 +60,18 @@ h2 {
     color: var(--slate-text);
 }
 
+p {
+    margin: 0 0;
+}
+
 /* Placed banner directly on webpage to have scaleable width at all screen sizes */
 
 .banner {
     width: 100%;
 }
 
-#about{
-    display: flex;   
+#about {
+    display: flex;
     margin-bottom: 5%;
     margin-left: 10%;
     justify-content: center;
@@ -80,6 +85,7 @@ h2 {
     width: max-content;
     border-radius: 20px;
 }
+
 .about-me p {
     position: relative;
     top: 23px;
@@ -89,21 +95,24 @@ h2 {
     margin-right: 5%;
 }
 
-#work-title, #about-me-title, #contact-me-title {
+#work-title,
+#about-me-title,
+#contact-me-title {
     text-align: center;
     border-bottom: dotted;
 }
 
 /* different spacing for this section to keep all the cards spaced and centered evenly */
-.current-work{
+.current-work {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    margin: 0 5%;
+    margin: 1% 5%;
 }
 
 /* common styling for all the cards */
-.cards, #card-1 {
+.cards,
+#card-1 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -112,9 +121,14 @@ h2 {
     background-repeat: no-repeat;
     border: solid var(--slate-text)
 }
+
 /* Unique styling for the main card due to larger size */
+#card-1-container {
+    width: 90%;
+    margin: 0 auto;
+}
+
 #card-1 {
-    width: 1600px;
     height: 800px;
     border-width: 5px;
     border-radius: 20px;
@@ -125,17 +139,18 @@ h2 {
     box-shadow: inset 0px 0px 24px var(--lilac);
 }
 
-#card-1-label:hover, .label:hover {
-    box-shadow: inset 0px 0px 8px var(--lilac) ;
+#chess:hover,
+.label:hover {
+    box-shadow: inset 0px 0px 8px var(--lilac);
 }
 
 /* all styling for the smaller cards*/
-.cards {    
+.cards {
     width: 400px;
     height: 400px;
     border-radius: 20px;
     margin-top: 1%;
-    }
+}
 
 .cards:hover {
     box-shadow: inset 0px 0px 18px var(--lilac);
@@ -153,27 +168,32 @@ h2 {
 }
 
 /* Unique for size for the labels on the larger card */
-.label #chess, #chess-2 {
+#chess,
+#chess-2 {
     font-size: 3rem;
 }
 
-#card-2{
+#card-2 {
     background-image: url(./images/gym-weight.jpeg);
 }
-#card-3{
+
+#card-3 {
     background-image: url(./images/boxer.jpg);
-    }
-#card-4{
+}
+
+#card-4 {
     background-image: url(./images/stonks.jpg);
-    }
+}
 
 #contact-me-title {
     margin-bottom: 0px;
 }
+
 footer {
     background-color: var(--lilac);
     padding-top: 80px;
 }
+
 footer ul {
     display: flex;
     flex-wrap: wrap;
@@ -190,9 +210,11 @@ footer ul li {
     font-size: 1.3rem;
     margin: 0 20px;
 }
- 
+
 @media screen and (max-width: 992px) {
-    footer ul li, .cards {
+
+    footer ul li,
+    .cards {
         display: flex;
         flex-direction: column;
         flex: 0 0 50%;
@@ -200,7 +222,9 @@ footer ul li {
 }
 
 @media screen and (max-width: 768px) {
-    footer ul li, .cards {
+
+    footer ul li,
+    .cards {
         display: flex;
         flex-direction: column;
         flex: 0 0 60%;
