@@ -41,7 +41,7 @@ N/A
 - The AI generated image of myself is thanks to [https://imgcreator.zmo.ai](https://imgcreator.zmo.ai)
 - The banner under the header of my page is thanks to [https://pngtree.com](https://pngtree.com)
 - The chess board for my main card is thanks to [https://www.pexels.com](https://www.pexels.com)
-- The weights stock photo is from [htthps://isorepublic.com](htthps://isorepublic.com)
+- The weights stock photo is from [https://isorepublic.com](https://isorepublic.com)
 - The boxer stock photo is from [https://istockphoto.com](https://istockphoto.com)
 - The stock, stocks candlestick photo is from [https://qs.com](https://qs.com)
 
