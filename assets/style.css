@@ -18,6 +18,8 @@ body {
     font-size: 2.0rem;   
     margin-left: 15px;
 }
+
+/* individual styling for the surname in the header */
 .ln {
     color: var(--slate-text);
 }
@@ -26,7 +28,7 @@ body {
     float: right;
     margin-right: 15px;
 }
-
+/* used similar code to make the navbar similar to the challenge 01 website  */
 .navbar div ul {
     display: inline-block;
     list-style-type: none;
@@ -41,23 +43,33 @@ body {
     border-radius: 10px;
 }
 
+/* used the code from the mini project in week 2 to make the boxes and labels responsive and glow when hovered over */
 .links:hover {
     box-shadow: inset 0 0 8px var(--white);
 }
 
+/* removes the blue hyperlink styling from the anchor links */
 a {
     text-decoration: none;
     color: var(--white);
 }
 
+h2 {
+    font-size: 3rem;
+    color: var(--slate-text);
+}
+
+/* Placed banner directly on webpage to have scaleable width at all screen sizes */
+
 .banner {
     width: 100%;
 }
+
 #about{
     display: flex;   
+    margin-bottom: 5%;
     margin-left: 10%;
     justify-content: center;
-    height: 300px;
 }
 
 .about-me img {
@@ -70,7 +82,7 @@ a {
 }
 .about-me p {
     position: relative;
-    top: 22px;
+    top: 23px;
     left: 35px;
     font-size: 1.2rem;
     color: var(--slate-text);
@@ -81,6 +93,8 @@ a {
     text-align: center;
     border-bottom: dotted;
 }
+
+/* different spacing for this section to keep all the cards spaced and centered evenly */
 .current-work{
     display: flex;
     justify-content: space-around;
@@ -88,24 +102,46 @@ a {
     margin: 0 5%;
 }
 
-
-.cards {    
+/* common styling for all the cards */
+.cards, #card-1 {
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: space-between;
-    width: 400px;
-    height: 400px;
-    border: solid var(--slate-text);
-    border-radius: 20px;
-    margin-top: 1%;
+    align-items: center;
     background-size: cover;
     background-repeat: no-repeat;
+    border: solid var(--slate-text)
 }
+/* Unique styling for the main card due to larger size */
+#card-1 {
+    width: 1600px;
+    height: 800px;
+    border-width: 5px;
+    border-radius: 20px;
+    background-image: url(./images/chess-board.jpg);
+}
+
+#card-1:hover {
+    box-shadow: inset 0px 0px 24px var(--lilac);
+}
+
+#card-1-label:hover, .label:hover {
+    box-shadow: inset 0px 0px 8px var(--lilac) ;
+}
+
+/* all styling for the smaller cards*/
+.cards {    
+    width: 400px;
+    height: 400px;
+    border-radius: 20px;
+    margin-top: 1%;
+    }
 
 .cards:hover {
     box-shadow: inset 0px 0px 18px var(--lilac);
 }
+
+/* common styling for all the title labels on the smaller cards */
 .label {
     color: var(--white);
     font-size: 1.4em;
@@ -115,59 +151,22 @@ a {
     height: max-content;
     background-color: var(--slate-text);
 }
+
+/* Unique for size for the labels on the larger card */
 .label #chess, #chess-2 {
     font-size: 3rem;
 }
-.label:hover{
-    box-shadow: inset 0px 0px 8px var(--lilac);
-}
 
-#card-1 {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    width: 1600px;
-    height: 800px;
-    border: solid var(--slate-text);
-    border-width: 5px;
-    border-radius: 20px;
-    background-image: url(./images/chess-board.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-#card-1:hover {
-    box-shadow: inset 0px 0px 24px var(--lilac);
-}
-
-#card-1-label:hover {
-    box-shadow: inset 0px 0px 8px var(--lilac) ;
-}
-#chess {
-    color: var(--white);
-    text-decoration: none;
-}
 #card-2{
     background-image: url(./images/gym-weight.jpeg);
-    background-size: cover;
-    background-repeat: no-repeat;
 }
 #card-3{
     background-image: url(./images/boxer.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-}
+    }
 #card-4{
     background-image: url(./images/stonks.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
     }
 
-h2 {
-    font-size: 3rem;
-    color: var(--slate-text);
-}
 #contact-me-title {
     margin-bottom: 0px;
 }
@@ -180,6 +179,8 @@ footer ul {
     flex-wrap: wrap;
     justify-content: flex-end;
 }
+
+/* Removed default styling for list, added margins to space out links evenly. */
 footer ul li {
     display: flex;
     flex-wrap: wrap;
